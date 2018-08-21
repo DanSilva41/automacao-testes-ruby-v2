@@ -8,7 +8,7 @@ Quando("Acesso a pagina do formulario") do
     find_by_id('user_university').set 'Faculdade Projeção'
     find_by_id('user_profile').set 'Software Developer'
     find_by_id('user_gender').set 'Masculino'
-    find_by_id('user_age').set '5'
+    find_by_id('user_age').set '20'
     click_button 'Criar'
     # find_link('Voltar').click ou click_on(class: 'btn waves-light red')
     

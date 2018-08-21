@@ -9,3 +9,20 @@ class Formulario < SitePrism::Page
     element :profissao, '#user_profile'
     element :genero, '#user_gender'
     element :idade, '#user_age'
+
+    element :salvar, '.commit'
+    element :voltar, find_link('Voltar')
+
+    def preencher_formulario
+        nome.set 'Danilo'
+        ultimo_nome.set 'Silva'
+        email.set 'dansilva41@hotmail.com'
+        endereco.set 'Estância 03 Módulo 06 Casa 17'
+        universidade.set 'Faculdade Projeção'
+        profissao.set 'Software Developer'
+        genero.set 'Masculino'
+        idade.set '20'
+
+        salvar.click
+    end
+end
