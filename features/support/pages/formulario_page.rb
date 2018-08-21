@@ -10,8 +10,7 @@ class Formulario < SitePrism::Page
     element :genero, '#user_gender'
     element :idade, '#user_age'
 
-    element :salvar, '.commit'
-    element :voltar, find_link('Voltar')
+    element :salvar, '[name=commit]'
 
     def preencher_formulario
         nome.set 'Danilo'
