@@ -12,15 +12,15 @@ class Formulario < SitePrism::Page
 
     element :salvar, '[name=commit]'
 
-    def preencher_formulario
-        nome.set 'Danilo'
-        ultimo_nome.set 'Silva'
-        email.set 'dansilva41@hotmail.com'
-        endereco.set 'Estância 03 Módulo 06 Casa 17'
-        universidade.set 'Faculdade Projeção'
-        profissao.set 'Software Developer'
-        genero.set 'Masculino'
-        idade.set '20'
+    def preencher_formulario(p_nome, p_ultimo_nome, p_email, p_endereco, p_universidade, p_profissao, p_genero, p_idade)
+        nome.set p_nome
+        ultimo_nome.set p_ultimo_nome
+        email.set p_email
+        endereco.set p_endereco
+        universidade.set p_universidade
+        profissao.set p_profissao
+        genero.set p_genero
+        idade.set p_idade
 
         salvar.click
     end
